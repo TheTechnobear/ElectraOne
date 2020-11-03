@@ -1,0 +1,57 @@
+{
+  "version": 2,
+  "name": "simpletest",
+  "projectId": "y3jRReISu6qr8cFCUGcK",
+  "pages": [
+    {
+      "id": 1,
+      "name": "Page 1"
+    }
+  ],
+  "groups": [],
+  "devices": [
+    {
+      "id": 1,
+      "name": "Generic MIDI",
+      "port": 1,
+      "channel": 1
+    }
+  ],
+  "overlays": [],
+  "controls": [
+    {
+      "id": 8,
+      "type": "fader",
+      "name": "7-BIT CC",
+      "color": "FFFFFF",
+      "bounds": [
+        170,
+        128,
+        146,
+        56
+      ],
+      "pageId": 1,
+      "controlSetId": 1,
+      "inputs": [
+        {
+          "potId": 8,
+          "valueId": "value"
+        }
+      ],
+      "values": [
+        {
+          "id": "value",
+          "message": {
+            "deviceId": 1,
+            "type": "cc7",
+            "parameterNumber": 1,
+            "min": 0,
+            "max": 127
+          },
+          "min": 0,
+          "max": 127
+        }
+      ]
+    }
+  ]
+}

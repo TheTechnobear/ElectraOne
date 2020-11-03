@@ -1,3 +1,8 @@
+# Simple converter from Electra One Preset to Instrument file
+# see https://electra.one
+# GPL 3.0
+# https://github.com/TheTechnobear/ElectraOne.git
+
 import json
 import sys
 
@@ -7,7 +12,7 @@ controlsets = {}
 
 
 def main(argv): 
-    print("converting : " + argv[0])
+    print("converting preset : " + argv[0])
     eifdata = {'version' : 2}
     with open(argv[0]) as f:
       eprdata = json.load(f)
@@ -18,8 +23,8 @@ def main(argv):
       createOverlays(eifdata, eprdata)
       createParameters(eifdata,eprdata)
 
-      fn=argv[0].replace('epr','eif')
-
+      fn=argv[0].replace('.epr','.eif')
+      print("writing instrument: " + fn)
       outfile = open(fn, "w")
       outfile.write(json.dumps(eifdata, indent=4, sort_keys=True))
       outfile.close()
@@ -45,7 +50,12 @@ def createHeader(eifdata,eprdata):
       
 
 def categoryId(pgId,csId):
-    return pages[pgId]+'-'+controlsets[pgId][csId]
+    if pgId in pages.keys(): 
+      if pgId in controlsets[pgId]: 
+        cs = controlsets[pgId]
+        if csId < len(cs): 
+          return pages[pgId]+'-'+controlsets[pgId][csId-1]
+    return None 
 
 
 def createCategories(eifdata,eprdata):
@@ -86,7 +96,9 @@ def createParameters(eifdata,eprdata):
             p['min'] = msg['min']
         if 'max' in msg.keys(): 
             p['max'] = msg['max']
-        p['categoryId'] = categoryId(pgId,csId)
+        category = categoryId(pgId,csId)
+        if category != None: 
+          p['categoryId'] = category
         if 'overlayId' in vals.keys(): 
             p['overlayId'] = vals['overlayId']
         p['msg'] = msg['type']

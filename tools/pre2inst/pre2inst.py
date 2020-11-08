@@ -11,7 +11,7 @@ overlays = {}
 controlsets = {}
 
 
-def main(argv): 
+def main(argv):
     print("converting preset : " + argv[0])
     eifdata = {'version' : 2}
     with open(argv[0]) as f:
@@ -30,11 +30,11 @@ def main(argv):
       outfile.close()
 
 def parseGlobals(eprdata):
-    for i in eprdata['pages'] : 
+    for i in eprdata['pages'] :
         pages[i['id']] = i['name']
         controlsets[i['id']] = []
 
-    for i in eprdata['overlays'] : 
+    for i in eprdata['overlays'] :
         overlays[i['id']] = i['items']
 
     for i in eprdata['groups']:
@@ -47,15 +47,19 @@ def createHeader(eifdata,eprdata):
       eifdata['name'] = eprdata['name']
       eifdata['manufacturer']= eprdata['name']
       eifdata['manufacturerId']= eprdata['name']
-      
+
 
 def categoryId(pgId,csId):
-    if pgId in pages.keys(): 
-      if pgId in controlsets[pgId]: 
+    if pgId in pages.keys():
+      if pgId in controlsets:
         cs = controlsets[pgId]
-        if csId < len(cs): 
-          return pages[pgId]+'-'+controlsets[pgId][csId-1]
-    return None 
+        if len(cs) == 0: # No Controlsets/nothing in page
+            return None
+        if csId <= len(cs): # One group per control set
+            return pages[pgId]+'-'+controlsets[pgId][csId-1]
+        if csId > len(cs): # More Controlsets than groups [multi row group]
+            return pages[pgId]+'-'+controlsets[pgId][len(cs)-1]
+    return None
 
 
 def createCategories(eifdata,eprdata):
@@ -87,22 +91,22 @@ def createParameters(eifdata,eprdata):
         msg  = vals['message']
         pgId = i['pageId']
         csId = i['controlSetId'];
-        pid = msg['parameterNumber'] 
+        pid = msg['parameterNumber']
 
         p['id'] = pid
         p['type'] = i['type']
         p['name'] = i['name']
-        if 'min' in msg.keys(): 
+        if 'min' in msg.keys():
             p['min'] = msg['min']
-        if 'max' in msg.keys(): 
+        if 'max' in msg.keys():
             p['max'] = msg['max']
         category = categoryId(pgId,csId)
-        if category != None: 
+        if category != None:
           p['categoryId'] = category
-        if 'overlayId' in vals.keys(): 
+        if 'overlayId' in vals.keys():
             p['overlayId'] = vals['overlayId']
         p['msg'] = msg['type']
-        if p['msg'] == 'sysex' : 
+        if p['msg'] == 'sysex' :
             p['data'] = msg['data']
 
         parameters[pid] = p

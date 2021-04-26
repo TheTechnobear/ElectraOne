@@ -1,0 +1,555 @@
+{
+    "categories": [], 
+    "id": "RAMPLE", 
+    "manufacturer": "RAMPLE", 
+    "manufacturerId": "RAMPLE", 
+    "name": "RAMPLE", 
+    "overlays": [], 
+    "parameters": [
+        {
+            "id": "56", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-ENV", 
+            "type": "fader"
+        }, 
+        {
+            "id": "81", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-RESET", 
+            "type": "fader"
+        }, 
+        {
+            "id": "54", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-START", 
+            "type": "fader"
+        }, 
+        {
+            "id": "42", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-FILTR", 
+            "type": "fader"
+        }, 
+        {
+            "id": "48", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-LEVEL", 
+            "type": "fader"
+        }, 
+        {
+            "id": "43", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-FREEZE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "60", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-LYRMOD", 
+            "type": "fader"
+        }, 
+        {
+            "id": "61", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-LYRMOD", 
+            "type": "fader"
+        }, 
+        {
+            "id": "62", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-LYRMOD", 
+            "type": "fader"
+        }, 
+        {
+            "id": "63", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-LYRMOD", 
+            "type": "fader"
+        }, 
+        {
+            "id": "64", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-LYRMOD", 
+            "type": "fader"
+        }, 
+        {
+            "id": "49", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-LAYER", 
+            "type": "fader"
+        }, 
+        {
+            "id": "82", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-RESET", 
+            "type": "fader"
+        }, 
+        {
+            "id": "83", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-RESET", 
+            "type": "fader"
+        }, 
+        {
+            "id": "80", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-RESET", 
+            "type": "fader"
+        }, 
+        {
+            "id": "52", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-FILTR", 
+            "type": "fader"
+        }, 
+        {
+            "id": "53", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-FREEZE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "84", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-RESET", 
+            "type": "fader"
+        }, 
+        {
+            "id": "24", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-STRT", 
+            "type": "fader"
+        }, 
+        {
+            "id": "25", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-LENGTH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "26", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-ENV", 
+            "type": "fader"
+        }, 
+        {
+            "id": "27", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-MODE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "20", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-PITCH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "21", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-BITS", 
+            "type": "fader"
+        }, 
+        {
+            "id": "22", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-FILTR", 
+            "type": "fader"
+        }, 
+        {
+            "id": "23", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-FREEZE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "46", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-ENV", 
+            "type": "fader"
+        }, 
+        {
+            "id": "47", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-MODE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "44", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-START", 
+            "type": "fader"
+        }, 
+        {
+            "id": "45", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-LENGTH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "28", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-LEVEL", 
+            "type": "fader"
+        }, 
+        {
+            "id": "29", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-LAYER", 
+            "type": "fader"
+        }, 
+        {
+            "id": "40", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-PITCH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "41", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-BITS", 
+            "type": "fader"
+        }, 
+        {
+            "id": "51", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-BITS", 
+            "type": "fader"
+        }, 
+        {
+            "id": "39", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-LAYER", 
+            "type": "fader"
+        }, 
+        {
+            "id": "99", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "KITSLCT", 
+            "type": "fader"
+        }, 
+        {
+            "id": "38", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-LEVEL", 
+            "type": "fader"
+        }, 
+        {
+            "id": "73", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-RAND", 
+            "type": "fader"
+        }, 
+        {
+            "id": "72", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "2-RAND", 
+            "type": "fader"
+        }, 
+        {
+            "id": "71", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-RAND", 
+            "type": "fader"
+        }, 
+        {
+            "id": "70", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-RAND", 
+            "type": "fader"
+        }, 
+        {
+            "id": "59", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-LAYER", 
+            "type": "fader"
+        }, 
+        {
+            "id": "100", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "PREVKIT", 
+            "type": "fader"
+        }, 
+        {
+            "id": "101", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "NEXTKIT", 
+            "type": "fader"
+        }, 
+        {
+            "id": "58", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-LEVEL", 
+            "type": "fader"
+        }, 
+        {
+            "id": "11", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-BITS", 
+            "type": "fader"
+        }, 
+        {
+            "id": "10", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-PITCH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "13", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-FREEZE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "12", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-FILTR", 
+            "type": "fader"
+        }, 
+        {
+            "id": "15", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-LENGTH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "14", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-START", 
+            "type": "fader"
+        }, 
+        {
+            "id": "17", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-MODE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "16", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-ENV", 
+            "type": "fader"
+        }, 
+        {
+            "id": "19", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-LAYER", 
+            "type": "fader"
+        }, 
+        {
+            "id": "18", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "1-LEVEL", 
+            "type": "fader"
+        }, 
+        {
+            "id": "31", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-BITS", 
+            "type": "fader"
+        }, 
+        {
+            "id": "30", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-PITCH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "37", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-MODE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "36", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-ENV", 
+            "type": "fader"
+        }, 
+        {
+            "id": "35", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-LENGTH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "34", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-START", 
+            "type": "fader"
+        }, 
+        {
+            "id": "33", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-FREEZE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "55", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-LENGTH", 
+            "type": "fader"
+        }, 
+        {
+            "id": "74", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "4-RAND", 
+            "type": "fader"
+        }, 
+        {
+            "id": "32", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "3-FILTR", 
+            "type": "fader"
+        }, 
+        {
+            "id": "57", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-MODE", 
+            "type": "fader"
+        }, 
+        {
+            "id": "50", 
+            "max": 127, 
+            "min": 0, 
+            "msg": "cc7", 
+            "name": "G-PITCH", 
+            "type": "fader"
+        }
+    ], 
+    "version": 2
+}

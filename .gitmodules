@@ -1,0 +1,6 @@
+[submodule "tools/Vst2Instr/JUCE"]
+	path = tools/Vst2Instr/JUCE
+	url = https://github.com/juce-framework/JUCE.git
+[submodule "tools/Vst2Instr/ElectraLite"]
+	path = tools/Vst2Instr/ElectraLite
+	url = https://github.com/TheTechnobear/ElectraLite.git
